@@ -17,3 +17,13 @@ document.getElementById('inscripcion-form').addEventListener('submit', function(
         alert('Por favor, completa todos los campos.');
     }
 });
+
+// Función para mostrar el semestre seleccionado
+function mostrarSemestre(semestre) {
+    // Ocultar todas las tablas de semestres
+    const tablas = document.querySelectorAll('.semestre-tabla');
+    tablas.forEach(tabla => tabla.style.display = 'none');
+
+    // Mostrar la tabla del semestre seleccionado
+    document.getElementById('semestre' + semestre).style.display = 'block';
+}
