@@ -22,20 +22,134 @@
 
     <main>
         <h2>Plan de Estudios</h2>
-        <div class="semestre">
-            <h3>Semestre 1</h3>
-            <ul>
-                <li>Introducción a la Programación - 4 créditos - 6 horas semanales</li>
-                <li>Matemáticas Discretas - 3 créditos - 4 horas semanales</li>
-            </ul>
+
+         <!-- Barra de navegación por semestres -->
+         <div class="semestre-nav">
+            <button onclick="mostrarSemestre(1)">Semestre 1</button>
+            <button onclick="mostrarSemestre(2)">Semestre 2</button>
+            <button onclick="mostrarSemestre(3)">Semestre 3</button>
+            <button onclick="mostrarSemestre(4)">Semestre 4</button>
+            <button onclick="mostrarSemestre(5)">Semestre 5</button>
+            <button onclick="mostrarSemestre(6)">Semestre 6</button>
         </div>
-        <!-- Añade más semestres -->
+
+        <!-- Tablas de cada semestre -->
+        <div class="tablas-semestres">
+            <div id="semestre1" class="semestre-tabla">
+                <h3>Semestre 1</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Asignatura</th>
+                            <th>Créditos</th>
+                            <th>Intensidad Horaria (hrs/sem)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8107248</td>
+                            <td>Fundamentos de Programación</td>
+                            <td>3</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>8107249</td>
+                            <td>Cátedra Upetecista</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr></tr>
+                            <td>8107250</td>
+                            <td>Álgebra Lineal</td>
+                            <td>3</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr></tr>
+                        <td>8107251</td>
+                        <td>Probabilidad y Estadística</td>
+                        <td>3</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr></tr>
+                    <td>8107252</td>
+                    <td>Métodos de Estudio y Competencias Comunicativas</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+
+                <tr></tr>
+                <td>8107253</td>
+                <td>Informática</td>
+                <td>3</td>
+                <td>2</td>
+            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="semestre2" class="semestre-tabla" style="display: none;">
+                <h3>Semestre 2</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Asignatura</th>
+                            <th>Créditos</th>
+                            <th>Intensidad Horaria (hrs/sem)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>201</td>
+                            <td>Estructuras de Datos</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <!-- Agrega más asignaturas aquí -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Repite para los semestres restantes -->
+
+            <div id="semestre3" class="semestre-tabla" style="display: none;">
+                <h3>Semestre 3</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Asignatura</th>
+                            <th>Créditos</th>
+                            <th>Intensidad Horaria (hrs/sem)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>301</td>
+                            <td>Base de Datos</td>
+                            <td>4</td>
+                            <td>6</td>
+                        </tr>
+                        <!-- Agrega más asignaturas aquí -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Repite para el resto de los semestres -->
+        </div>
+    </main>
+
     </main>
 
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Programa de Tecnología en Programación de Sistemas Informáticos. Todos los derechos reservados.</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

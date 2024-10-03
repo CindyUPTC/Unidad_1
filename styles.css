@@ -9,7 +9,7 @@ body {
 
 /* Menú de navegación */
 header {
-    background-color: #0044cc;
+    background-color: hwb(46 8% 7%);
     padding: 10px 0;
 }
 
@@ -33,17 +33,83 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Secciones */
-section {
+
+
+main {
     padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h2 {
     color: #0044cc;
+}
+
+/* Estilos para las tarjetas */
+.tarjetas-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.tarjeta-contenido {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.tarjeta:hover .tarjeta-contenido {
+    transform: rotateY(180deg);
+}
+
+.frente, .reverso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.frente {
+    background-color: #ffcc29;
+    color: rgb(13, 13, 13);
+}
+
+.reverso {
+    background-color: #f4f4f4;
+    color: black;
+    transform: rotateY(180deg);
+    border: 1px solid #ddd;
+    overflow-y: auto; /* Habilitar scroll vertical */
+    padding: 10px;
+}
+
+/* Limitar el tamaño del contenido en el reverso */
+.reverso p {
+    max-height: 150px; /* Limitar la altura para hacer espacio al scroll */
+    overflow-y: auto; /* Mostrar scroll si el contenido es largo */
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
 }
 
 /* Plan de Estudios */
