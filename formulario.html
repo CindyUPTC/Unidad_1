@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="planEstudios.html">Plan de Estudios</a></li>
+                <li><a href="gruposInvestigacion.html">Grupos de Investigación</a></li>
+                <li><a href="formulario.html">Formulario de Inscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulario de Inscripción</h2>
+        <form id="inscripcion-form">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="contacto">Número de Contacto:</label>
+            <input type="tel" id="contacto" name="contacto" required>
+
+            <label for="programa">Programa:</label>
+            <input type="text" id="programa" name="programa" required>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Programa de Tecnología en Programación de Sistemas Informáticos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
