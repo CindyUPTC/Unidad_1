@@ -14,6 +14,17 @@ header {
     padding: 10px 0;
 }
 
+.caja-encabezado {
+    position: relative;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 18%;
+    position: absolute;
+    left: 0;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -218,6 +229,19 @@ button:hover {
     background-color: #9c530a;
 }
 
+.tab-grupos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.grupo {
+    flex: 1 1 200px; 
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
 /* Estilo para dispositivos móviles (diseño responsivo) */
 @media (max-width: 768px) {
@@ -239,11 +263,19 @@ button:hover {
 }
 
 /* Pie de página */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
+footer {				   
     color: white;
     margin-top: 40px;
     border-top: 4px solid #575757;
+    background-image: url(https://www.uptc.edu.co/sitio/export/sites/default/portal/.content/imagenes/footer_sitio1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: unset;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo_footer {
+    width: 50%;
+    filter: invert(1.4);
 }
