@@ -8,6 +8,7 @@ body {
 }
 
 /* Menú de navegación */
+
 header {
     background-color: hwb(46 8% 7%);
     padding: 10px 0;
@@ -41,8 +42,14 @@ main {
 }
 
 h2 {
-    color: #0044cc;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
 }
+
+/*h2 {
+    color: #0044cc;
+}*/
 
 /* Estilos para las tarjetas */
 .tarjetas-container {
@@ -112,9 +119,73 @@ p {
     margin: 0;
 }
 
-/* Plan de Estudios */
-.semestre {
+
+/* Estilos para la barra de navegación por semestres */
+.semestre-nav {
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
+}
+
+.semestre-nav button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.semestre-nav button:hover {
+    background-color: #575757;
+}
+
+.semestre-nav button:focus {
+    outline: none;
+    background-color: #575757;
+}
+
+/* Estilos para las tablas de semestres */
+.tablas-semestres {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.semestre-tabla {
+    display: none;
+}
+
+.semestre-tabla h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
 }
 
 /* Formulario */
@@ -147,13 +218,32 @@ button:hover {
     background-color: #003399;
 }
 
-/* Diseño Responsivo */
+
+/* Estilo para dispositivos móviles (diseño responsivo) */
 @media (max-width: 768px) {
-    nav ul {
+    .semestre-nav {
         flex-direction: column;
     }
 
-    section {
-        margin: 10px;
+    .semestre-nav button {
+        margin: 5px 0;
     }
+
+    th, td {
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+    border-top: 4px solid #575757;
 }
