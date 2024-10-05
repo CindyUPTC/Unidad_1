@@ -128,7 +128,7 @@ p {
 }
 
 .semestre-nav button {
-    background-color: #333;
+    background-color: #e9aa22;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -139,12 +139,12 @@ p {
 }
 
 .semestre-nav button:hover {
-    background-color: #575757;
+    background-color: #070310;
 }
 
 .semestre-nav button:focus {
     outline: none;
-    background-color: #575757;
+    background-color: #c28420;
 }
 
 /* Estilos para las tablas de semestres */
@@ -180,8 +180,8 @@ th, td {
 }
 
 th {
-    background-color: #333;
-    color: white;
+    background-color: #f5dc1a;
+    color: rgb(10, 10, 10);
 }
 
 td {
@@ -208,14 +208,14 @@ form input {
 button {
     padding: 10px;
     border: none;
-    background-color: #0044cc;
+    background-color: #e68919;
     color: #fff;
     cursor: pointer;
     border-radius: 4px;
 }
 
 button:hover {
-    background-color: #003399;
+    background-color: #9c530a;
 }
 
 
