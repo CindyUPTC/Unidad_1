@@ -7,11 +7,11 @@ document.getElementById('inscripcion-form').addEventListener('submit', function(
     const apellidos = document.getElementById('apellidos').value;
     const correo = document.getElementById('correo').value;
     const contacto = document.getElementById('contacto').value;
-    const programa = document.getElementById('programa').value;
+    const grupo = document.getElementById('grupo').value; // Obtener el valor del select
 
     // Validar que los campos estén completos
-    if (nombres && apellidos && correo && contacto && programa) {
-        alert('Inscripción exitosa. ¡Gracias por inscribirte!');
+    if (nombres && apellidos && correo && contacto && grupo) {
+        alert('Registro Exitoso. ¡Gracias por inscribirte!');
         document.getElementById('inscripcion-form').reset(); // Limpiar el formulario
     } else {
         alert('Por favor, completa todos los campos.');

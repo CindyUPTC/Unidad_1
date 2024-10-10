@@ -10,14 +10,19 @@
 
     <!-- Encabezado -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="planEstudios.html">Plan de Estudios</a></li>
-                <li><a href="gruposInvestigacion.html">Grupos de Investigación</a></li>
-                <li><a href="formulario.html">Formulario de Inscripción</a></li>
-            </ul>
-        </nav>
+        <div class="caja-encabezado">
+            <h1><img class="logo"
+                    src="https://www.uptc.edu.co/sitio/portal/PRUEBAS/pruebasM/Frontal/.content/img/botones/logoUPTC24.svg"
+                    alt="" /></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="planEstudios.html">Plan de Estudios</a></li>
+                    <li><a href="gruposInvestigacion.html">Grupos de Investigación</a></li>
+                    <li><a href="formulario.html">Formulario de Inscripción</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -35,17 +40,25 @@
             <label for="contacto">Número de Contacto:</label>
             <input type="tel" id="contacto" name="contacto" required>
 
-            <label for="programa">Programa:</label>
-            <input type="text" id="programa" name="programa" required>
-
-            <button type="submit">Enviar</button>
+            <fieldset>
+                <legend>En cuál grupo de investigación desea inscribirse</legend>
+                <select id="grupo" required>
+                    <option value="" disabled selected>Seleccione un grupo</option>
+                    <option value="tica">Grupo Investigación TICA</option>
+                    <option value="tecno-innovaciones">Grupo Investigación TECNO - INNOVACIONES</option>
+                </select>
+            </fieldset><br>
+            
+            <button type="submit">Enviar</button><br>
             <button type="reset">Limpiar</button>
         </form>
     </main>
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Programa de Tecnología en Programación de Sistemas Informáticos. Todos los derechos reservados.</p>
+        <img class="logo_footer" src="img/imagenes/log_uptc_acred_pos.png" alt="">
+        <p>&copy; 2024 Programa de Tecnología en Programación de Sistemas Informáticos. Todos los derechos reservados.
+        </p>
     </footer>
     <script src="script.js"></script>
 </body>
