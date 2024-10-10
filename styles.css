@@ -1,16 +1,21 @@
 /* Estilos globales */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    padding-top: 60px; /* Deja espacio para el menú fijo */
 }
 
 /* Menú de navegación */
 
+
 header {
     background-color: hwb(46 8% 7%);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     padding: 10px 0;
 }
 
@@ -18,6 +23,8 @@ header {
     position: relative;
     margin: 0 auto;
 }
+
+
 
 .logo {
     width: 18%;
@@ -48,8 +55,12 @@ nav ul li a:hover {
 
 
 main {
-    padding: 20px;
-    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px; /* Ajuste del espaciado superior */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -58,9 +69,6 @@ h2 {
     color: #333;
 }
 
-/*h2 {
-    color: #0044cc;
-}*/
 
 /* Estilos para las tarjetas */
 .tarjetas-container {
@@ -113,6 +121,48 @@ h2 {
     border: 1px solid #ddd;
     overflow-y: auto; /* Habilitar scroll vertical */
     padding: 10px;
+}
+
+/* Estilos para centrar las imágenes y agregar efectos en grupos de investigacion*/
+.tab-grupos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.grupo {
+    text-align: center;
+    width: 45%;
+    margin: 20px 0;
+}
+
+.grupo img {
+    width: 300px;
+    height: 200px;
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.grupo img:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+h3, h4 {
+    margin: 10px 0;
+}
+
+p {
+    text-align: justify; /* Texto justificado */
+    margin: 10px 0;
+}
+
+/* Estilos para que las imágenes se mantengan centradas */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Limitar el tamaño del contenido en el reverso */
